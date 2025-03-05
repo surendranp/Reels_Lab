@@ -180,7 +180,7 @@ app.post("/api/generate-content", async (req, res) => {
     const response = await openai.chat.completions.create({
       model: "gpt-4",
       messages: [
-        {
+        {   
           role: "user",
           content: `Extract the main keyword or topic from the following content:\n\n${content}`,
         },
